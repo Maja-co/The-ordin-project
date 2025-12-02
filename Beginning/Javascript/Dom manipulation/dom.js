@@ -37,3 +37,29 @@ container.appendChild(paragraf);
 
 // Til sidst sætter vi hele containeren (med indhold) ind på siden
 document.body.appendChild(container);
+
+
+// --- HER ER KNAP LØSNINGERNE ---
+
+// Fælles funktion vi kan bruge flere steder
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
+
+// METHOD 2: Bruger .onclick (Kun én funktion tilladt)
+// Vi henter knappen med ID "btn2"
+const btn2 = document.querySelector("#btn2"); 
+
+btn2.onclick = alertFunction; 
+// Hvis du skrev en ny btn2.onclick linje herunder, ville den overskrive den første.
+
+
+// METHOD 3: Bruger addEventListener (Den bedste metode!)
+// Vi henter knappen med ID "btn3"
+const btn3 = document.querySelector("#btn3");
+
+btn3.addEventListener("click", alertFunction);
+// Fordelen her: Du kan tilføje FLERE ting til samme knap uden at ødelægge den forrige:
+btn3.addEventListener("click", function() {
+  console.log("Jeg virker også!");
+});
