@@ -60,6 +60,6 @@ const btn3 = document.querySelector("#btn3");
 
 btn3.addEventListener("click", alertFunction);
 // Fordelen her: Du kan tilføje FLERE ting til samme knap uden at ødelægge den forrige:
-btn3.addEventListener("click", function() {
+btn3.addEventListener("click", () => {
   console.log("Jeg virker også!");
 });
