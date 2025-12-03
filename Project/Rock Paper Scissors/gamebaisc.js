@@ -1,7 +1,5 @@
 console.log("Welcome to rock paper scissors")
 
-
-
 let humanScore = 0;
 let computerScore = 0;
 
