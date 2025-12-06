@@ -1,0 +1,92 @@
+
+.key {
+    background-color: #333333;
+    color: #f4f4f4;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: none;
+    font-size: 18;
+    transition: all 2.0s ease-out;
+}
+.key:hover {
+    filter: brightness(150%);
+    
+}
+
+.key:active{
+    filter: brightness(170%);
+    transition: 0s;
+}
+
+.key-operator:active {
+    filter: none; 
+    background-color: #ffc966; 
+    color: white;
+    transition: 0s;
+}
+
+.key-zero {
+    grid-column: span 2;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 20px;
+    aspect-ratio: auto;
+}
+
+
+.key-operator {
+    background-color: #ff9b0f;
+    color: #fefae2;
+    font-size: 23;
+}
+
+.key-function {
+    background-color: #a5a5a5;
+    color: #060606;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 lige store kolonner */
+    gap: 10px; /* Mellemrum mellem knapperne */
+}
+
+.calculator-display {
+    display: grid;
+    grid-column: span 4;
+    height: 70px;
+    font-size: 52;
+    text-align: end;
+    color: #fefae2;
+}
+
+.calculator {
+    background-color: #060606;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+.theCalculator {
+    height: 700px;
+    width: 230px;
+    align: center;
+    
+}
+
+body {
+    display: flex;             /* Gør body til en flex-container */
+    justify-content: center;   /* Centrerer vandret (venstre/højre) */
+    align-items: center;       /* Centrerer lodret (op/ned) */
+    min-height: 100vh;         /* VIGTIGT: Gør siden 100% af skærmens højde */
+    margin: 0;                 /* Fjerner hvide kanter ude i siderne */
+}
+
+
+
+
+
+
+
+
+
+

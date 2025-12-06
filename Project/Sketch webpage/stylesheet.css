@@ -1,0 +1,19 @@
+#gridcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    
+}
+
+.grid-square {
+    width: 60px; 
+    height: 60px;
+    border: 1px solid #ddd; 
+    box-sizing: border-box;
+}
+
+.grid-square:hover {
+    background-color: aqua;
+    opacity: 30%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
